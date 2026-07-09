@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Lobos Radio</title>
+
+<style>
+body{
+    margin:0;
+    background:#1d1d1d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+#player{
+    width:300px;
+    background:#2b2b2b;
+    color:#fff;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+button{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+p{
+    margin-top:15px;
+    color:#ccc;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="player">
+
+<h2>Lobos Radio</h2>
+
+<button id="play">▶</button>
+
+<p>Haz clic para escuchar</p>
+
+</div>
+
+<script>
+
+document.getElementById("play").onclick=function(){
+
+window.open(
+"https://onlineradiobox.com/player/mx/lobos/",
+"_blank",
+"width=380,height=650"
+);
+
+};
+
+</script>
+
+</body>
+</html>
