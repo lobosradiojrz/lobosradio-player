@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Prueba Lobos Radio</title>
-</head>
-<body>
-
-<audio id="radio" controls autoplay>
-    <source src="http://uk6freenew.listen2myradio.com:18206/" type="audio/mpeg">
-</audio>
-
 <script>
-document.getElementById("radio").play().catch(console.error);
-</script>
+const a = document.getElementById("radio");
 
-</body>
-</html>
+a.addEventListener("error", () => {
+    console.log("ERROR:", a.error);
+});
+
+a.addEventListener("loadedmetadata", () => {
+    console.log("loadedmetadata");
+});
+
+a.addEventListener("canplay", () => {
+    console.log("canplay");
+});
+
+a.addEventListener("playing", () => {
+    console.log("playing");
+});
+</script>
