@@ -1,119 +1,18 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta http-equiv="cleartype" content="on" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, user-scalable=yes" />
-	<meta name="MobileOptimized" content="340" />
-	<meta charset="utf-8" />
-	<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
-
-	<meta name="theme-color" content="#2259a3" />
-	<meta name="msapplication-navbutton-color" content="#2259a3" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#2259a3" />
-
-	<link rel="stylesheet" media="screen" href="//cdn.onlineradiobox.com/css/player.popup.min.3cc1603c.css" />
-	<title>Lobos Radio en Vivo - Ciudad Juárez, México | Online Radio Box</title>
-	<base href="https://onlineradiobox.com/" target="_blank">
-
-<script>
-	window._dashurl="//cdn.onlineradiobox.com/js/videojs-contrib-dash.min.aaddbdf7.js";
-	window._hlsurl="//cdn.onlineradiobox.com/js/hls-1.6.5.min.84114ded.js";
-	window._noAjax=1;
-	function gtag() {}
-</script>
+<meta charset="utf-8">
+<title>Prueba Lobos Radio</title>
 </head>
-
 <body>
-<audio id="top_player" crossorigin="true" style="width:1px;height:1px;overflow:hidden;position:absolute;"></audio>
 
-<header class="header">
-	<section class="header__section">
-		<a href="https://onlineradiobox.com/mx/" target="orb_site" class="header__i-logo" title="Online Radio Box">Online Radio Box</a>
-	</section>
-</header>
+<audio id="radio" controls autoplay>
+    <source src="http://uk6freenew.listen2myradio.com:18206/" type="audio/mpeg">
+</audio>
 
-<section class="station">
-	<div class="player__station">
-		<figure class="player__station__title" id="top_player_title">
-			<a href="https://onlineradiobox.com/mx/lobos/" target="orb_site">
-				<img class="station__title__logo" src="//cdn.onlineradiobox.com/img/l/2/74332.v50.png" alt="Lobos Radio">
-				<figcaption class="station__title__name">Lobos Radio</figcaption>
-			</a>
-			<!--<br />
-			<a class="player__station__show" href="show.php">%Programm_Name</a>-->
-		</figure>
-		<span id="top_player_track" class="player__station__track" loading="cargando" playing="en directo" error="error de reproduccion" not_supported="this browser can&#39;t play it" external="Escuchar ahora (Abrir en un reproductor emergente)" stopped="se detuvo la emisión" geo_blocked="No disponible en tu país"></span>
-	<!--/player__station-->
-	</div>
-<!--/station-->
-</section>
-
-<section class="player">
-	<div class="player__section">
-		<div class="player__controls">
-			<button class="b-play" id="b_top_play" title="Radio en vivo"></button>
-			<div class="player__volume" id="top_vol_panel">
-				<button class="b-volume" id="b_vol_control" title="Control de volumen"></button>
-				<div class="player__volume__slider" role="slider id="top_volume_slider" aria-label="volume_level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="" aria-orientation="vertical">
-					<div class="b-slider" id="top_volume_control"></div>
-				</div>
-			<!--/player__volume-->
-			</div>
-		<!--/player__controls-->
-		</div>
-	<!--/player__section-->
-	</div>
-<!--/player-->
-</section>
-
-<section class="banner">
-	<div class="banner--vertical">
-
-		<div class="mahjong">
-			<a href="https://mahjongchest.com/" target="_blank" onclick="this.href='https://mahjongchest.com/?utm_source=orb&utm_medium=player&utm_campaign=mahjong'">
-				Mahjong Online
-				<picture title="Mahjong Online">
-					<img src="//cdn.onlineradiobox.com/img/mhj_banner-orbpopup.png" alt="Mahjong Online">
-					<img src="//cdn.onlineradiobox.com/img/mhj_banner-orbpopup-bg1.jpg" data-attribute="banner-bg">
-					<img src="//cdn.onlineradiobox.com/img/mhj_banner-orbpopup-bg4.jpg" data-attribute="banner-bg">
-					<img src="//cdn.onlineradiobox.com/img/mhj_banner-orbpopup-bg2.jpg" data-attribute="banner-bg">
-					<img src="//cdn.onlineradiobox.com/img/mhj_banner-orbpopup-bg3.jpg" data-attribute="banner-bg">
-				</picture>
-			</a>
-		</div>
-		
-	<div class="banner__description fade">Debido a las características de la nueva versión de BrowserFirefox, las retransmisiones de algunas emisoras de radio solo pueden reproducirse de esta manera.</div>
-	</div>
-</section>
-
-<section class="banner_description">
-	<span onmouseup="$('.banner__description').toggleClass('in');$(this).toggleClass('active')" class="">¿Por qué el reproductor tiene este aspecto?</span>
-</section>
-</body>
-<button id="set_radio_button" style="display: none;" played="1" class="b-play station_play" aria-label="En Vivo" title="Radio en vivo" stream="http://uk6freenew.listen2myradio.com:18206/;" streamType="mp3" radioId="mx.lobos" radioImg="//cdn.onlineradiobox.com/img/l/2/74332.v50.png" radioName="Lobos Radio"></button>
-
-	<script>
-		window.trackServer="https://scraper2.onlineradiobox.com/";
-		window.currentCountry="mx";
-	</script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="//cdn.onlineradiobox.com/js/jquery.history.js"></script>
-	<script src="//cdn.onlineradiobox.com/js/bootstrap.js"></script>
-	<script type="text/javascript" src="//cdn.onlineradiobox.com/js/videojs-8.21.1.min.8a5f0305.js"></script>
-
-	<script src="//cdn.onlineradiobox.com/js/radio.min.ef265f83.js"></script>
-		
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52815707-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-52815707-2');
-  gtag('config', 'G-7LD76EP8L7');
+document.getElementById("radio").play().catch(console.error);
 </script>
 
+</body>
 </html>
-
-</div>
